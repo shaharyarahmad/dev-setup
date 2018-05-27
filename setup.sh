@@ -18,7 +18,7 @@ apt-get update
 apt-get install -y php7.1
 apt-get install -y php-gd
 apt-get install -y php-curl
-apt-get install -y php-7.1mcrypt
+apt-get install -y php7.1-mcrypt
 apt-get install -y php-mbstring
 apt-get install -y php-xml
 apt-get install -y php-zip
