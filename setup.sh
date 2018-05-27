@@ -27,7 +27,7 @@ apt-get install -y php-zip
 apt-get install -y debconf-utils
 debconf-set-selections <<< 'mysql-server mysql-server/root_password password root'
 debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password root'
-sudo apt-get install mysql-server php7.1-mysql mysql-common
+sudo apt-get install -y mysql-server php7.1-mysql mysql-common
 mysql -u root -proot -e "CREATE USER 'sandbox'@'%' IDENTIFIED BY 'sandbox';"
 mysql -u root -proot -e "GRANT ALL PRIVILEGES ON *.* TO 'sandbox'@'%' WITH GRANT OPTION;"
 mysql -u root -proot -e "FLUSH PRIVILEGES;"
