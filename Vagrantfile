@@ -14,7 +14,7 @@ Vagrant.configure("2") do |config|
 	end
 
     config.vm.provision "shell" do |s|
-        s.path "./setup.sh"
+        s.path = "./setup.sh"
     end
 
 end
